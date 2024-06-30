@@ -6,110 +6,65 @@
 
 body {
     font-family: "Archivo Narrow", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     height: auto;
     width: 100%;
 }
 
 header {
+    display: flex;
     height: auto;
     margin: 0 auto;
     width: 80%;
 }
 
-main {
-    height: auto;
-    margin: 0 auto;
-    width: 80%;
+header section:first-child {
+    align-items: center;
+    display: flex;
+    width: 75%;
 }
-
-section {
+header section:first-child img {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     padding: 20px;
 }
 
-header {
+main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin: 0 auto;
+    width: 80%;
 }
 
-header > section:nth-child(1) {
-    display: flex;
-    align-items: center;
-}
-
-header > section:nth-child(1) > img {
-    margin-right: 20px;
-}
-
-header > section:nth-child(2) {
+main > section {
+    padding: 20px;
 }
 
 h1 {
     font-family: "Julius Sans One", sans-serif;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 h2 {
     font-family: "Julius Sans One", sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    margin-top: 10px;
+
 }
 
 h3 {
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 2rem;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 1.25rem;
     margin-bottom: 10px;
     text-decoration: underline;
 }
 
 li {
     list-style-type: none;
-    margin-bottom: 10px;
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: 1.25fr 0.75fr repeat(2, 1fr);
-    grid-template-rows: 0.25fr 1fr 0.5fr 0.25fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
-}
-
-.div1 {
-    grid-area: 1 / 1 / 2 / 3;
-}
-
-.div2 {
-    grid-area: 1 / 3 / 2 / 5;
-}
-
-.div3 {
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-.div4 {
-    grid-area: 2 / 2 / 3 / 5;
-}
-
-.div5 {
-    grid-area: 3 / 1 / 4 / 5;
-}
-
-.div5 div {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.div5 div article {
-    margin-bottom: 10px;
-    width: 33%;
-}
-
-.div6 {
-    grid-area: 4 / 1 / 5 / 5;
-    display: flex;
-}
-.div6 article {
-    width: 50%;
 }
